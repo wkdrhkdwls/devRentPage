@@ -4,7 +4,8 @@
 module.exports = {
   siteMetadata: {
     title: `devRentPage`,
-    siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss',
+  ],
 }
