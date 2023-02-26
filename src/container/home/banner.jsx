@@ -1,8 +1,16 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import * as React from "react";
+import useBannerDetail from "../../hooks/Container/Home/Banner/hook";
 
 const Banner = ({ title }) => {
-  return <div>{title}</div>;
+  const link = useBannerDetail();
+  return (
+    <div>
+      <Link to={link}>
+        <span>Recruit</span>
+      </Link>
+    </div>
+  );
 };
 
 export default Banner;
