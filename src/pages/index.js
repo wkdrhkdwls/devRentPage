@@ -3,7 +3,6 @@ import Layout from "../components/Layout/layout";
 import Banner from "../container/home/banner";
 import Project from "../container/home/project";
 import Vision from "../container/home/vision";
-import useHook from "../hooks/hook";
 
 const IndexPage = () => {
   return (
