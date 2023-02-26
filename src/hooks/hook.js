@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from "gatsby";
 
-function useHook () {
+function useQnADetail () {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -17,4 +17,4 @@ function useHook () {
   return { data, link };
 }
 
-export default useHook;
+export default useQnADetail;
